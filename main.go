@@ -9,6 +9,7 @@ type Task struct {
 	ID       int    `json:"id"`
 	Title    string `json:"title"`
 	Priority string `json:"priority"`
+	DueDate  string `json:"due_date"`
 }
 
 func main() {
@@ -17,6 +18,7 @@ func main() {
 			ID:       1,
 			Title:    "Prepare report",
 			Priority: "high",
+			DueDate:  "2026-11-05",
 		}
 
 		w.Header().Set("Content-Type", "application/json")
